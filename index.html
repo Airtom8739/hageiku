@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+<head>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <meta charset="utf-8">
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <title>HTML5テンプレ</title>
+</head>
+    <body>
+        <div id="all">
+          <header>
+            <p>はげいく　Web版</p>
+          </header>
+          <div id="main">
+            <!--形態名を表示-->
+            <div id="name"></div>
+            <!--レベルを表示-->
+            <div id="level"></div>
+            <!--ステータスを表示-->
+            <div id="status"></div>
+            <!--キャラクター画像を表示-->
+            <p><img src="images/c000_0.png" id="charaimag"></p>
+            <!--ボタン-->
+            <button class="buttonton" onclick="gohan()" type="submit">ごはん</button>
+            <button class="buttonton" onclick="oshigoto()" type="submit">おしごと</button>
+            <button class="buttonton" onclick="setting()" type="submit">せってい</button>
+            <!--id="gohan"ごはん-->
+            <div style="display:none" id="gohan_tr">
+                <p>ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯ごはん御飯ご飯</p>
+            </div>
+            <!--id="oshigoto"おしごと-->
+            <div style="display:none" id="oshigoto_tr">
+                <p>おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事おしごとお仕事御仕事</p>
+            </div>
+            <!--id="setting"せってい-->
+            <div style="display:none" id="setting_tr">
+                <p>せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定せってい設定</p>
+            </div>
+          </div>
+          <!--フッタ-->
+          <div id="footer">
+            <ul class="navi">
+              <li><a href="#">はげいくについて</a></li>
+              <li><a href="#">パラダイムソフトとは</a></li>
+              <li><a href="#">操作説明</a></li>
+              <li><a href="#">お問合せ</a></li>
+            </ul>
+            <p　id="copyright">&copy;paradigm soft</p>
+          </div>
+          <!--デバッグ用-->
+            <input type="button" value="お金+100" onclick="plusmoney()">
+            <input type="button" value="経験値+10" onclick="plusex()">
+            <input type="button" value="精力+10" onclick="pluspow()">
+            <input type="button" value="リセット" onclick="setReady()">
+        </div>
+        <script type="text/javascript">
+            setReady();
+            //初期化設定
+            function setReady(){
+                pow = 50;
+                ex = 1;
+                money = 1000;
+                pow_old = 0;
+                ex_old = 0;
+                money_old = 0;
+                n = 1;
+                gohan_count = 0;
+                oshigoto_count = 0;
+                setting_count = 0;
+                HPcount();
+            }
+        </script>
+    </body>
+</html>
